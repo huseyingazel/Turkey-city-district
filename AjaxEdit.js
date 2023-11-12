@@ -27,7 +27,6 @@ $( document ).ready(function() {
 
     //district selection process
     for (var i = 0; i < selectDisElement.options.length; i++) {
-        // Eğer seçenek "5" ise, bu seçeneği seç
         if (selectDisElement.options[i].value === disVal) {
             selectDisElement.selectedIndex = i;
             break;
@@ -37,10 +36,7 @@ $( document ).ready(function() {
 
     //Function that will run when the city is changed
     $("#cityedit").change(function() {
-        // Seçilen option elementini alın
         var selectOption = $("#cityedit option:selected");
-
-        // Option'un değerini alın
         var selectVal = selectOption.val();
         $.ajax({
             type: "POST",
