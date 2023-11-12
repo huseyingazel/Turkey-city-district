@@ -8,7 +8,6 @@ $( document ).ready(function() {
 
     //city selection process
     for (var i = 0; i < selectCityElement.options.length; i++) {
-        // Eğer seçenek "5" ise, bu seçeneği seç
         if (selectCityElement.options[i].value === cityVal) {
             selectCityElement.selectedIndex = i;
             break;
